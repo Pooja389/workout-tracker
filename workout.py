@@ -6,12 +6,12 @@ load_dotenv()
 
 APP_ID = os.getenv("api_id")
 API_KEY = os.getenv("api_key")
-print(APP_ID)
+
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheet_endpoint = os.getenv("sheet_url")
 
-exercise_text = input("tell me which exercise you did :")
-
+exercise_text = input("tell me which exercise you did and for how many minutes :")
+# example "running for 40 minutes"
 headers = {
     "x-app-id": APP_ID,
     "x-app-key": API_KEY,
